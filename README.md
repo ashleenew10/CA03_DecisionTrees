@@ -39,16 +39,16 @@ The dataset is obtained from the U.S. Census Bureau and includes various demogra
 ## Requirements
 
 Ensure you have the following packages installed:
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn import preprocessing
-from sklearn.preprocessing import LabelEncoder
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, f1_score, recall_score, precision_score, roc_auc_score, roc_curve
-from sklearn.tree import plot_tree
+- import pandas as pd
+- import numpy as np
+- import seaborn as sns
+- import matplotlib.pyplot as plt
+- from sklearn.model_selection import train_test_split
+- from sklearn import preprocessing
+- from sklearn.preprocessing import LabelEncoder
+- from sklearn.tree import DecisionTreeClassifier
+- from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, f1_score, recall_score, precision_score, roc_auc_score, roc_curve
+- from sklearn.tree import plot_tree
 
 
 ## In order to run:
