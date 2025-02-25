@@ -34,7 +34,7 @@ The dataset is obtained from the U.S. Census Bureau and includes various demogra
 
 - **notebook.ipynb:** Jupyter Notebook containing all the code for data exploration, cleaning, model training, hyperparameter tuning, and evaluation.
 - **README.md:** This file, providing an overview and instructions.
-- **requirements.txt:** List of Python packages required for the project (e.g., scikit-learn, pandas, matplotlib, seaborn, etc.).
+- **census_data.csv:** This is the actual data you can utilize if the direct link isn't working.
 
 ## Requirements
 
@@ -51,40 +51,42 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 from sklearn.tree import plot_tree
 
 
-In order to run:
+## In order to run:
 -git clone https://github.com/yourusername/your-repo-name.gitcd your-repo-name
 -Open the notebook file
 -Run cells sequentially (they are in sections as follows:)
-Data Quality Analysis (DQA)
-Data Cleansing and Transformation (including encoding)
-Model Building using Decision Tree Classifier
-Hyperparameter Tuning (four runs varying different hyperparameters)
-Model Evaluation (accuracy, precision, recall, F1 score, ROC AUC)
-Final Model Visualization
-Making Predictions on a New Data Record
+  Data Quality Analysis (DQA)
+  Data Cleansing and Transformation (including encoding)
+  Model Building using Decision Tree Classifier
+  Hyperparameter Tuning (four runs varying different hyperparameters)
+  Model Evaluation (accuracy, precision, recall, F1 score, ROC AUC)
+  Final Model Visualization
+  Making Predictions on a New Data Record
 
 
-Here is some more details about this project:
-Data Quality Analysis:
+## Here is some more details about this project:
+### Data Quality Analysis:
 The notebook explores the dataset for missing values, outliers, and skewness, and creates a detailed Data Quality Report.
 
-Data Cleaning and Encoding:
+### Data Cleaning and Encoding:
 Categorical features are preprocessed (using regex to remove unwanted prefixes) and encoded using LabelEncoder. The same preprocessing is applied to new records for prediction consistency.
 
-Model Training and Hyperparameter Tuning:
+### Model Training and Hyperparameter Tuning:
 The Decision Tree model is trained using the training set. Hyperparameters are tuned in four runs:
 
-Run 1: Varying split criterion (gini vs. entropy)
-Run 2: Varying minimum samples per leaf
-Run 3: Varying maximum features
-Run 4: Varying maximum depth
+-Run 1: Varying split criterion (gini vs. entropy)
+-Run 2: Varying minimum samples per leaf
+-Run 3: Varying maximum features
+-Run 4: Varying maximum depth
+
 Each run is evaluated using accuracy along with precision, recall, and F1 score. Line graphs visualize the performance changes.
-Final Model and Visualization:
+
+### Final Model and Visualization:
 The best-performing tree is built using the optimal hyperparameters, and its structure is visualized for interpretability.
 
-Prediction on New Data:
+##Prediction on New Data:
 A new record is created (using the same feature structure and encoding as the training data), and the final model predicts the income category with an associated confidence (probability) score.
 
-Conclusion
+## Conclusion
 This project demonstrates a systematic approach to building, tuning, and evaluating a Decision Tree classifier for income classification. The detailed hyperparameter tuning process ensures that the final model is both robust and interpretable, while the prediction on a new individual illustrates the practical application of the model.
 
