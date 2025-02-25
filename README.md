@@ -84,7 +84,7 @@ Each run is evaluated using accuracy along with precision, recall, and F1 score.
 ### Final Model and Visualization:
 The best-performing tree is built using the optimal hyperparameters, and its structure is visualized for interpretability.
 
-##Prediction on New Data:
+## Prediction on New Data:
 A new record is created (using the same feature structure and encoding as the training data), and the final model predicts the income category with an associated confidence (probability) score.
 
 ## Conclusion
