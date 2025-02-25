@@ -74,10 +74,10 @@ Categorical features are preprocessed (using regex to remove unwanted prefixes) 
 ### Model Training and Hyperparameter Tuning:
 The Decision Tree model is trained using the training set. Hyperparameters are tuned in four runs:
 
--Run 1: Varying split criterion (gini vs. entropy)
--Run 2: Varying minimum samples per leaf
--Run 3: Varying maximum features
--Run 4: Varying maximum depth
+- Run 1: Varying split criterion (gini vs. entropy)
+- Run 2: Varying minimum samples per leaf
+- Run 3: Varying maximum features
+- Run 4: Varying maximum depth
 
 Each run is evaluated using accuracy along with precision, recall, and F1 score. Line graphs visualize the performance changes.
 
